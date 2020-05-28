@@ -8,89 +8,9 @@ body{
   font-family: 'Roboto Slab', serif;
   overflow-x: hidden;
 }
+.carousel-caption h2{
+  color:rgb(238, 224, 238);
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 30px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  text-shadow: 0 0 10 20px black;
-}
-.mySlides img{
-  width: 100%;
-  height: 400px;
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: rgb(233, 48, 38);
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 .aboutthecompany{
@@ -100,24 +20,32 @@ body{
   font-family: 'Roboto Slab';
   text-align: center;
   margin-top: 20px;
-  padding-bottom: 20px;
+
 }
 .aboutthecompany h4{
-  color: rgb(104, 110, 115);
   font-weight: 500;
   font-size: 40px;
   font-family: 'Roboto Slab';
   color: red;
+}
+.aboutthecompany h1{
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: 'Roboto Slab';
+
 }
 .discription{
   font-family: sans-serif;
   color: black;
   column-count: 2;
   text-align: center;;
-  border-left: 2px solid black;d4
+  border-left: 2px solid black;
   transition: 2s linear infinite;
 }
-
+.discription:hover{
+  color: #fff;
+}
 
 .container h1{
   margin-top: 50px;
@@ -128,10 +56,13 @@ body{
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  border: 2px solid black;
+  border: 4px solid black;
+  border-radius: 20px;
+  display: block;
+  align-content: center;
 }
 .gallery img{
-  margin-top: 30px;
+
   transition: 1ms;
   padding: 15px;
   width: 250px;
@@ -150,6 +81,25 @@ body{
   padding: 20px;
   margin: 0;
 }
+
+
+.icon .fa{
+  font-size: 4em;
+  color: rgb(32, 168, 213);
+}
+.icon ul {
+  display: flex;
+  padding-right: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.icon ul li{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px;
+  color: black;
+}
 .card {
   display: grid;
   grid-template-columns: 300px;
@@ -162,6 +112,7 @@ body{
   text-align: center;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  margin: 15px;
 
 }
 .card-image {
@@ -171,16 +122,20 @@ body{
 
 }
 .card-image img {
- width: 100%;
+ width: 300px;
+ height: 225px;
  margin-top: 5%;
 }
 .card-text {
   grid-area: text;
-  margin: 25px;
+  margin-top: 25px;
+
 }
 .card-text .date{
   color: rgb(255, 7, 110);
-  font-size: 13px;
+  font-size: 20px;
+  font-family: sans-serif, serif;
+ display:block;
 }
 .card:hover {
   transform: scale(1.1);
@@ -190,7 +145,7 @@ body{
   color: grey;
   font-size: 15px;
   font-weight: 300;
-  box-sizing: border-box;
+  text-align:inherit;
 }
 .cardbutton{
   width: 100%;
@@ -199,7 +154,7 @@ body{
   font-weight: 600;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background: rgb(30, 188, 246);
+  background: rgb(57, 136, 224);
 }
 
 /* FOOTER*/
@@ -295,17 +250,4 @@ ul a:hover {
   background: #3d545f;
   color: #fff;
   font-size: 12px;
-}
-
-.icon ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.icon ul li{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 150px;
-  color: black;
 }
